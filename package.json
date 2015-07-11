@@ -1,0 +1,31 @@
+{
+  "name": "angular-inject",
+  "version": "0.1.0",
+  "description": "A JS decorator for injecting dependencies inside your angular classes",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cmartin81/angular-inject.git"
+  },
+  "keywords": [
+    "angular",
+    "dependency",
+    "injection",
+    "DI",
+    "ES2016"
+  ],
+  "author": "Christian Martin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cmartin81/angular-inject/issues"
+  },
+  "homepage": "https://github.com/cmartin81/angular-inject",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-concat": "^2.6.0"
+  }
+}
