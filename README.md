@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/cmartin81/angular-inject.svg?branch=master)](https://travis-ci.org/cmartin81/angular-inject)
+
 # angular-inject
 A angular decorator for angular dependency injection.
 
