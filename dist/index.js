@@ -15,16 +15,20 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function inject(modules) {
   return function (target) {
     var tempClass = (function (_target) {
+      _inherits(tempClass, _target);
+
       function tempClass() {
         _classCallCheck(this, tempClass);
 
-        _get(Object.getPrototypeOf(tempClass.prototype), "constructor", this).call(this);
+        for (var _len = arguments.length, injectedValues = Array(_len), _key = 0; _key < _len; _key++) {
+          injectedValues[_key] = arguments[_key];
+        }
+
+        _get(Object.getPrototypeOf(tempClass.prototype), "constructor", this).apply(this, injectedValues);
         for (var i = 0; i < modules.length; i++) {
-          this[modules[i]] = arguments[i];
+          this[modules[i]] = injectedValues[i];
         }
       }
-
-      _inherits(tempClass, _target);
 
       return tempClass;
     })(target);

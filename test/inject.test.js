@@ -1,5 +1,5 @@
 var assert = require("assert");
-var inject = require('../dist').inject;
+var inject = require('../dist/index.min').inject;
 var _ = require('lodash');
 
 describe('Inject', function() {

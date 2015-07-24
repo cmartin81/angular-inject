@@ -14,9 +14,9 @@ A angular decorator for angular dependency injection.
     let inject = require('angular-inject').inject;
 
 
-    @inject( ['$base64'] )
+    @inject( ['$base64', 'foobar'] )
     class FooBarController {
-        constructor(){
+        constructor(){  /if needed you can also access the injected variables here also (ie constructor(base64, foobar) )  
             ....
             ....
             ....
